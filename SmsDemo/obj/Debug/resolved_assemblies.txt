@@ -1,0 +1,9 @@
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\SmsDemo.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\Mono.Android.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\mscorlib.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\SMSSDK.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\System.Core.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\System.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\System.Xml.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\System.Xml.Linq.dll
+E:\xamarin\SmsDemo\SmsDemo\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll

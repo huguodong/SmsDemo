@@ -1,0 +1,1901 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="cn.smssdk">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="EventHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EventHandler" static="false" type="cn.smssdk.EventHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="afterEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="beforeEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRegister" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUnregister" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.EventHandler" extends-generic-aware="cn.smssdk.EventHandler" final="false" name="ReflectableEnventHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ReflectableEnventHandler" static="false" type="cn.smssdk.ReflectableEnventHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAfterEventCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBeforeEventCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnRegisterCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnUnregisterCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SMSSDK" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SMSSDK" static="false" type="cn.smssdk.SMSSDK" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContacts" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCountry" native="false" return="java.lang.String[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCountryByMCC" native="false" return="java.lang.String[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFriendsInApp" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGroupedCountryList" native="false" return="java.util.HashMap&lt;java.lang.Character, java.util.ArrayList&lt;java.lang.String[]&gt;&gt;" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNewFriendsCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedCountries" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVerificationCode" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initSDK" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readVerificationCode" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.telephony.SmsMessage">
+</parameter>
+<parameter name="p1" type="cn.smssdk.SMSSDK.VerifyCodeReadListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerEventHandler" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.EventHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="submitUserInfo" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="submitVerificationCode" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregisterAllEventHandler" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregisterEventHandler" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.EventHandler">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="EVENT_GET_CONTACTS" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_GET_FRIENDS_IN_APP" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_GET_NEW_FRIENDS_COUNT" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_GET_SUPPORTED_COUNTRIES" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_GET_VERIFICATION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_SUBMIT_USER_INFO" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_SUBMIT_VERIFICATION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_COMPLETE" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_ERROR" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SMSSDK.VerifyCodeReadListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onReadVerifyCode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.framework.ShareSDKUIShell" extends-generic-aware="cn.smssdk.framework.ShareSDKUIShell" final="false" name="SMSSDKUIShell" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SMSSDKUIShell" static="false" type="cn.smssdk.SMSSDKUIShell" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<implements name="cn.smssdk.contact.OnContactChangeListener" name-generic-aware="cn.smssdk.contact.OnContactChangeListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="cn.smssdk.a" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.telephony.SmsMessage">
+</parameter>
+<parameter name="p1" type="cn.smssdk.SMSSDK.VerifyCodeReadListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.EventHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.EventHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.util.HashMap&lt;java.lang.Character, java.util.ArrayList&lt;java.lang.String[]&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onContactChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="b" obfuscated="true" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+</package>
+<package name="cn.smssdk.a">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="a" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.a.a" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="b" static="false" type="cn.smssdk.a.b" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="cn.smssdk.a.a">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="c" obfuscated="true" static="false" visibility=""/>
+</package>
+<package name="cn.smssdk.b">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.b.a" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.b.a" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="cn.smssdk.b.a" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="cn.smssdk.b.a" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.b.b" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.telephony.SmsMessage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.SMSSDK.VerifyCodeReadListener">
+</parameter>
+</method>
+</class>
+</package>
+<package name="cn.smssdk.contact">
+<interface abstract="true" deprecated="not deprecated" final="false" name="OnContactChangeListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onContactChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.contact.a" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.contact.OnContactChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.ContentObserver" extends-generic-aware="android.database.ContentObserver" final="false" name="b" obfuscated="true" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c" static="false" type="cn.smssdk.contact.c" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.ContentResolver">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+<parameter name="p1" type="java.lang.String[]">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.String[]">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="d" obfuscated="true" static="false" visibility="public">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="d" static="false" type="cn.smssdk.contact.d" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="cn.smssdk.contact.a">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="e" obfuscated="true" static="false" visibility=""/>
+</package>
+<package name="cn.smssdk.contact.a">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="cn.smssdk.contact.a.a" visibility="public">
+<parameter name="p0" type="cn.smssdk.contact.c">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.contact.a.h" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="cn.smssdk.contact.a.i" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="cn.smssdk.contact.a.e" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="cn.smssdk.contact.a.k" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="cn.smssdk.contact.a.m" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="cn.smssdk.contact.a.j" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.q&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.g&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.c&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.l&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.n&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.d&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="java.util.ArrayList&lt;cn.smssdk.contact.a.o&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="n" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="b" static="false" type="cn.smssdk.contact.a.b" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.contact.a.b" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c" static="false" type="cn.smssdk.contact.a.c" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="d" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="d" static="false" type="cn.smssdk.contact.a.d" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="e" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="e" static="false" type="cn.smssdk.contact.a.e" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="f" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="f" static="false" type="cn.smssdk.contact.a.f" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="g" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="g" static="false" type="cn.smssdk.contact.a.g" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="h" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="h" static="false" type="cn.smssdk.contact.a.h" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="i" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="i" static="false" type="cn.smssdk.contact.a.i" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="j" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="j" static="false" type="cn.smssdk.contact.a.j" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="k" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="k" static="false" type="cn.smssdk.contact.a.k" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="l" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="l" static="false" type="cn.smssdk.contact.a.l" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="m" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="m" static="false" type="cn.smssdk.contact.a.m" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="n" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="n" static="false" type="cn.smssdk.contact.a.n" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="o" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="o" static="false" type="cn.smssdk.contact.a.o" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="p" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="p" static="false" type="cn.smssdk.contact.a.p" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.contact.a.b" extends-generic-aware="cn.smssdk.contact.a.b" final="false" name="q" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="q" static="false" type="cn.smssdk.contact.a.q" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="cn.smssdk.framework">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FakeActivity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FakeActivity" static="false" type="cn.smssdk.framework.FakeActivity" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="findViewById" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findViewByResName" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="finish" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContext" native="false" return="android.content.Context" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrientation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParent" native="false" return="cn.smssdk.framework.FakeActivity" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConfigurationChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDestroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFinish" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onNewIntent" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPause" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRestart" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onResume" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestLandscapeOrientation" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestPortraitOrientation" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runOnUIThread" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Runnable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runOnUIThread" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Runnable">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActivity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentViewLayoutResName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRequestedOrientation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShell" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Class&lt;? extends cn.smssdk.framework.ShareSDKUIShell&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="show" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showForResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.FakeActivity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startActivity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startActivityForResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="activity" static="false" transient="false" type="android.app.Activity" type-generic-aware="android.app.Activity" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.app.Activity" extends-generic-aware="android.app.Activity" final="false" name="ShareSDKUIShell" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ShareSDKUIShell" static="false" type="cn.smssdk.framework.ShareSDKUIShell" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerExecutor" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.framework.FakeActivity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerExecutor" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="cn.smssdk.framework.FakeActivity">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+</package>
+<package name="cn.smssdk.framework.network">
+<class abstract="false" deprecated="not deprecated" extends="java.io.ByteArrayOutputStream" extends-generic-aware="java.io.ByteArrayOutputStream" final="false" name="BufferedByteArrayOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BufferedByteArrayOutputStream" static="false" type="cn.smssdk.framework.network.BufferedByteArrayOutputStream" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BufferedByteArrayOutputStream" static="false" type="cn.smssdk.framework.network.BufferedByteArrayOutputStream" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBuffer" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBufferSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="switchBuffer" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.framework.network.HTTPPart" extends-generic-aware="cn.smssdk.framework.network.HTTPPart" final="false" name="ByteArrayPart" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ByteArrayPart" static="false" type="cn.smssdk.framework.network.ByteArrayPart" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="cn.smssdk.framework.network.ByteArrayPart" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="long" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" extends-generic-aware="java.io.InputStream" final="false" name="ByteCounterInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ByteCounterInputStream" static="false" type="cn.smssdk.framework.network.ByteCounterInputStream" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnInputStreamReadListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.framework.network.OnReadListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.framework.network.HTTPPart" extends-generic-aware="cn.smssdk.framework.network.HTTPPart" final="false" name="FilePart" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FilePart" static="false" type="cn.smssdk.framework.network.FilePart" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="long" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="HTTPPart" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HTTPPart" static="false" type="cn.smssdk.framework.network.HTTPPart" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStreamEntity" native="false" return="org.apache.http.entity.InputStreamEntity" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="length" native="false" return="long" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnReadListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.framework.network.OnReadListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpEntityEnclosingRequestBase" extends-generic-aware="org.apache.http.client.methods.HttpEntityEnclosingRequestBase" final="false" name="HttpPatch" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpPatch" static="false" type="cn.smssdk.framework.network.HttpPatch" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpPatch" static="false" type="cn.smssdk.framework.network.HttpPatch" visibility="public">
+<parameter name="p0" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpPatch" static="false" type="cn.smssdk.framework.network.HttpPatch" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;PATCH&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpResponseCallback" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onResponse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.apache.http.HttpResponse">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="KVPair" static="false" visibility="public">
+<typeParameters>
+<typeParameter name="T"/>
+</typeParameters>
+<constructor deprecated="not deprecated" final="false" name="KVPair" static="false" type="cn.smssdk.framework.network.KVPair" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="T">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="name" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="value" static="false" transient="false" type="java.lang.Object" type-generic-aware="T" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.framework.network.HTTPPart" extends-generic-aware="cn.smssdk.framework.network.HTTPPart" final="false" name="MultiPart" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MultiPart" static="false" type="cn.smssdk.framework.network.MultiPart" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="cn.smssdk.framework.network.MultiPart" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="cn.smssdk.framework.network.HTTPPart">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="long" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" extends-generic-aware="java.io.InputStream" final="false" name="MultiPartInputStream" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="addInputStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="NetworkHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NetworkHelper" static="false" type="cn.smssdk.framework.network.NetworkHelper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="downloadCache" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHttpPostResponse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+<parameter name="p5" type="cn.smssdk.framework.network.HttpResponseCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpGet" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpHead" native="false" return="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpPatch" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p5" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+<parameter name="p6" type="cn.smssdk.framework.network.OnReadListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpPost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpPost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+<parameter name="p5" type="cn.smssdk.framework.network.HttpResponseCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpPostFiles" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httpPut" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p4" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="jsonPost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p3" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;?&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawGet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="cn.smssdk.framework.network.RawNetworkCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawPost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.HTTPPart">
+</parameter>
+<parameter name="p3" type="cn.smssdk.framework.network.HttpResponseCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawPost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+<parameter name="p2" type="cn.smssdk.framework.network.HTTPPart">
+</parameter>
+<parameter name="p3" type="cn.smssdk.framework.network.RawNetworkCallback">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="connectionTimeout" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="readTimout" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="NetworkHelper.1" static="false" visibility="">
+<implements name="cn.smssdk.framework.network.HttpResponseCallback" name-generic-aware="cn.smssdk.framework.network.HttpResponseCallback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onResponse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.apache.http.HttpResponse">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="OnReadListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onRead" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ProgressCallback" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onProgress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RawNetworkCallback" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onResponse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.conn.ssl.SSLSocketFactory" extends-generic-aware="org.apache.http.conn.ssl.SSLSocketFactory" final="false" name="SSLSocketFactoryEx" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLSocketFactoryEx" static="false" type="cn.smssdk.framework.network.SSLSocketFactoryEx" visibility="public">
+<parameter name="p0" type="java.security.KeyStore">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SSLSocketFactoryEx.1" static="false" visibility="">
+<implements name="javax.net.ssl.X509TrustManager" name-generic-aware="javax.net.ssl.X509TrustManager">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkClientTrusted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.security.cert.X509Certificate[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkServerTrusted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.security.cert.X509Certificate[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAcceptedIssuers" native="false" return="java.security.cert.X509Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="cn.smssdk.framework.network.HTTPPart" extends-generic-aware="cn.smssdk.framework.network.HTTPPart" final="false" name="StringPart" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StringPart" static="false" type="cn.smssdk.framework.network.StringPart" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="cn.smssdk.framework.network.StringPart" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="long" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+</package>
+<package name="cn.smssdk.framework.utils">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BitmapHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BitmapHelper" static="false" type="cn.smssdk.framework.utils.BitmapHelper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="blur" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="captureView" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="downloadBitmap" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fixRect" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int[]">
+</parameter>
+<parameter name="p1" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBmpFormat" native="false" return="android.graphics.Bitmap.CompressFormat" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBmpFormat" native="false" return="android.graphics.Bitmap.CompressFormat" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="roundBitmap" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+<parameter name="p6" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveBitmap" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveBitmap" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p2" type="android.graphics.Bitmap.CompressFormat">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveViewToImage" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveViewToImage" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Data" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Data" static="false" type="cn.smssdk.framework.utils.Data" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="AES128Decode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AES128Decode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AES128Encode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="AES128Encode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="Base64AES" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="CRC32" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="MD5" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="MD5" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.File">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="MD5" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SHA1" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="SHA1" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="base62" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="byteToHex" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="byteToHex" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseJson" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseJson" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawMD5" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawMD5" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawMD5" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="urlEncode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="urlEncode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Hashon" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Hashon" static="false" type="cn.smssdk.framework.utils.Hashon" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="format" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromHashMap" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromJson" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="R" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R" static="false" type="cn.smssdk.framework.utils.R" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearCache" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="contentUriToPath" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyFile" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.FileInputStream">
+</parameter>
+<parameter name="p1" type="java.io.FileOutputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="covertTimeInYears" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dateStrToLong" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodeUrl" native="false" return="android.os.Bundle" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dipToPx" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodeUrl" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodeUrl" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.ArrayList&lt;cn.smssdk.framework.network.KVPair&lt;java.lang.String&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitmapRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCachePath" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColorRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIdRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageCachePath" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLayoutRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResId" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScreenHeight" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScreenSize" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScreenWidth" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStringArrayRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStringRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStyleRes" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longToDate" native="false" return="java.util.Date" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longToTime" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseTwitterDate" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pathToContentUri" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pxToDip" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCacheRoot" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="strToDate" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toWordText" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="urlToBundle" native="false" return="android.os.Bundle" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="UIHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UIHandler" static="false" type="cn.smssdk.framework.utils.UIHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepare" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendEmptyMessage" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendEmptyMessageAtTime" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendEmptyMessageDelayed" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendMessage" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendMessageAtFrontOfQueue" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+<parameter name="p1" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendMessageAtTime" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="android.os.Handler.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendMessageDelayed" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="android.os.Handler.Callback">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.framework.utils.a" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="n" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="o" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="p" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="q" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.1" obfuscated="true" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.a" obfuscated="true" static="false" visibility="">
+<implements name="android.content.ServiceConnection" name-generic-aware="android.content.ServiceConnection">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ComponentName">
+</parameter>
+<parameter name="p1" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ComponentName">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+<parameter name="p1" type="java.lang.Object...">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="a" static="true" transient="false" type="cn.smssdk.framework.utils.c.a" type-generic-aware="cn.smssdk.framework.utils.c.a" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="b" static="true" transient="false" type="cn.smssdk.framework.utils.c.b" type-generic-aware="cn.smssdk.framework.utils.c.b" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.a" obfuscated="true" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c.a" static="false" type="cn.smssdk.framework.utils.c.a" visibility="protected">
+</constructor>
+<field deprecated="not deprecated" final="false" name="a" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="b" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="c" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.b" obfuscated="true" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c.b" static="false" type="cn.smssdk.framework.utils.c.b" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="d" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.framework.utils.d" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.Long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="e" obfuscated="true" static="true" visibility="">
+<implements name="android.os.Handler.Callback" name-generic-aware="android.os.Handler.Callback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+</package>
+<package name="cn.smssdk.utils">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Protocols" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.utils.Protocols" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="RawNetworkCallbackImpl" static="false" visibility="public">
+<implements name="cn.smssdk.framework.network.RawNetworkCallback" name-generic-aware="cn.smssdk.framework.network.RawNetworkCallback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RawNetworkCallbackImpl" static="false" type="cn.smssdk.utils.RawNetworkCallbackImpl" visibility="public">
+<parameter name="p0" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onResponse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="cn.smssdk.utils.a" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+</api>

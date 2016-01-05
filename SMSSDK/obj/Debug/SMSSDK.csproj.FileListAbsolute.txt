@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\SmsDemo\SMSSDK\bin\Debug\SMSSDK.dll
+C:\Users\Administrator\Desktop\SmsDemo\SMSSDK\bin\Debug\SMSSDK.pdb
+C:\Users\Administrator\Desktop\SmsDemo\SMSSDK\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\Administrator\Desktop\SmsDemo\SMSSDK\obj\Debug\SMSSDK.dll
+C:\Users\Administrator\Desktop\SmsDemo\SMSSDK\obj\Debug\SMSSDK.pdb
+E:\xamarin\SmsDemo\SMSSDK\bin\Debug\SMSSDK.dll
+E:\xamarin\SmsDemo\SMSSDK\bin\Debug\SMSSDK.pdb
+E:\xamarin\SmsDemo\SMSSDK\bin\Debug\Xamarin.Android.Support.v4.dll
+E:\xamarin\SmsDemo\SMSSDK\obj\Debug\SMSSDK.csprojResolveAssemblyReference.cache
+E:\xamarin\SmsDemo\SMSSDK\obj\Debug\SMSSDK.dll
+E:\xamarin\SmsDemo\SMSSDK\obj\Debug\SMSSDK.pdb
